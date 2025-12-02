@@ -1,0 +1,74 @@
+/* 容器居中 */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* 输入框区域 */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.add-btn { background-color: #28a745; }
+.add-btn:hover { background-color: #218838; }
+
+.delete-btn { 
+  background-color: #dc3545; 
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+.delete-btn:hover { background-color: #c82333; }
+
+/* 列表区域 */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.todo-item {
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+/* 鼠标悬停效果 */
+.todo-item span {
+  cursor: pointer;
+  flex: 1;
+}
+
+/* 已完成状态的样式 */
+.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.empty-tip { color: #aaa; margin-top: 20px;}
