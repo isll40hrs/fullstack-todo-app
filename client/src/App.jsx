@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 // 后端 API 的基础地址
-const API_URL = 'http://localhost:5000/api/todos';
+//const API_URL = 'http://localhost:5000/api/todos';
+const API_URL = 'https://fullstack-todo-app-8v9l.onrender.com';
 
 function App() {
   // 1. 定义状态 (State)
